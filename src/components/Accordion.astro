@@ -1,0 +1,37 @@
+---
+interface Props {
+	accordion_title: string;
+	accordion_description: string;
+}
+
+const { accordion_title, accordion_description } = Astro.props;
+---
+
+<section class='section rounded-lg overflow-hidden w-[80%] my-8'>
+	<button
+		onclick='toggleAccordion.call(this)'
+		class='w-full p-4 text-xl font-bold text-left cursor-pointer accordion bg-picton-blue-800 hover:bg-picton-blue-900 text-picton-blue-50'
+		id='accordion'>{accordion_title}</button
+	>
+
+	<div
+		class='hidden p-6 overflow-hidden panel bg-picton-blue-100 text-picton-blue-950 max-h-0'>
+		<p class='mb-4 font-semibold'>{accordion_description}</p>
+		<p>
+			<slot />
+		</p>
+	</div>
+</section>
+
+<script is:inline>
+	function toggleAccordion() {
+		let panel = this.nextElementSibling;
+		if (panel.style.maxHeight) {
+			panel.classList.add('hidden');
+			panel.style.maxHeight = null;
+		} else {
+			panel.classList.remove('hidden');
+			panel.style.maxHeight = panel.scrollHeight + 'px';
+		}
+	}
+</script>

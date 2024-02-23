@@ -1,0 +1,698 @@
+---
+import Base from '@layouts/layoutbase.astro';
+import Accordion from '@components/Accordion.astro';
+import Entry_Params from '@components/Entry_Accordion.astro';
+
+const title = 'Layouts';
+const description = 'Tailwind Cheatsheet for Offline use.';
+---
+
+<Base title={title} description={description}>
+	<section class='w-full text-picton-blue-50'>
+		<h1 class='mb-16 text-5xl font-bold'>Layouts</h1>
+
+		<div class='flex flex-col items-center justify-center'>
+			<Accordion
+				accordion_title='Aspect Ratio'
+				accordion_description='Utilities for controlling the aspect ratio of an element.'>
+				<section
+					class='overflow-hidden border-b-2 rounded-md border-picton-blue-950'>
+					<Entry_Params
+						tailparam='aspect-auto'
+						cssparam='aspect-ratio: auto;'
+					/>
+					<Entry_Params
+						tailparam='aspect-square'
+						cssparam='aspect-ratio: 1 / 1;'
+					/>
+					<Entry_Params
+						tailparam='aspect-video'
+						cssparam='aspect-ratio: 16 / 9;'
+					/>
+				</section>
+			</Accordion>
+
+			<Accordion
+				accordion_title='Container'
+				accordion_description='Sets the max-width to match the min-width of the current breakpoint.'>
+				<section
+					class='overflow-hidden border-b-2 rounded-md border-picton-blue-950'>
+					<Entry_Params tailparam='none' cssparam='width: 100%' />
+					<Entry_Params
+						tailparam='md (768px)'
+						cssparam='max-width: 768px;'
+					/>
+					<Entry_Params
+						tailparam='lg (1024px)'
+						cssparam='max-width: 1024px;'
+					/>
+					<Entry_Params
+						tailparam='xl (1280px)'
+						cssparam='max-width: 1280px;'
+					/>
+					<Entry_Params
+						tailparam='2xl (1536px)'
+						cssparam='max-width: 1536px;'
+					/>
+				</section>
+			</Accordion>
+
+			<Accordion
+				accordion_title='Columns'
+				accordion_description='Utilities for controlling the number of columns within an element.'>
+				<section
+					class='overflow-hidden border-b-2 rounded-md border-picton-blue-950'>
+					<Entry_Params tailparam='none' cssparam='width: 100%' />
+					<Entry_Params
+						tailparam='columns-1'
+						cssparam='columns: 1;'
+					/>
+					<Entry_Params
+						tailparam='columns-2'
+						cssparam='columns: 2;'
+					/>
+					<Entry_Params
+						tailparam='columns-3'
+						cssparam='columns: 3;'
+					/>
+					<Entry_Params
+						tailparam='columns-4'
+						cssparam='columns: 4;'
+					/>
+					<Entry_Params
+						tailparam='columns-5'
+						cssparam='columns: 5;'
+					/>
+					<Entry_Params
+						tailparam='columns-6'
+						cssparam='columns: 6;'
+					/>
+					<Entry_Params
+						tailparam='columns-7'
+						cssparam='columns: 7;'
+					/>
+					<Entry_Params
+						tailparam='columns-8'
+						cssparam='columns: 8;'
+					/>
+					<Entry_Params
+						tailparam='columns-9'
+						cssparam='columns: 9;'
+					/>
+					<Entry_Params
+						tailparam='columns-10'
+						cssparam='columns: 10;'
+					/>
+					<Entry_Params
+						tailparam='columns-11'
+						cssparam='columns: 11;'
+					/>
+					<Entry_Params
+						tailparam='columns-12'
+						cssparam='columns: 12;'
+					/>
+					<Entry_Params
+						tailparam='columns-auto'
+						cssparam='columns: auto;'
+					/>
+					<Entry_Params
+						tailparam='columns-3xs'
+						cssparam='columns: 16rem;'
+					/>
+					<Entry_Params
+						tailparam='columns-2xs'
+						cssparam='columns: 18rem;'
+					/>
+					<Entry_Params
+						tailparam='columns-xs'
+						cssparam='columns: 20rem;'
+					/>
+					<Entry_Params
+						tailparam='columns-sm'
+						cssparam='columns: 24rem;'
+					/>
+					<Entry_Params
+						tailparam='columns-md'
+						cssparam='columns: 28rem;'
+					/>
+					<Entry_Params
+						tailparam='columns-lg'
+						cssparam='columns: 32rem;'
+					/>
+					<Entry_Params
+						tailparam='columns-xl'
+						cssparam='columns: 36rem;'
+					/>
+					<Entry_Params
+						tailparam='columns-2xl'
+						cssparam='columns: 42rem;'
+					/>
+					<Entry_Params
+						tailparam='columns-3xl'
+						cssparam='columns: 48rem;'
+					/>
+					<Entry_Params
+						tailparam='columns-4xl'
+						cssparam='columns: 56rem;'
+					/>
+					<Entry_Params
+						tailparam='columns-5xl'
+						cssparam='columns: 64rem;'
+					/>
+					<Entry_Params
+						tailparam='columns-6xl'
+						cssparam='columns: 72rem;'
+					/>
+					<Entry_Params
+						tailparam='columns-7xl'
+						cssparam='columns: 80rem;'
+					/>
+				</section>
+			</Accordion>
+
+			<Accordion
+				accordion_title='Break After'
+				accordion_description='Utilities for controlling how a column or page should break after an element.'>
+				<section
+					class='overflow-hidden border-b-2 rounded-md border-picton-blue-950'>
+					<Entry_Params
+						tailparam='break-after-auto'
+						cssparam='break-after: auto;'
+					/>
+					<Entry_Params
+						tailparam='break-after-avoid'
+						cssparam='break-after: avoid;'
+					/>
+					<Entry_Params
+						tailparam='break-after-all'
+						cssparam='break-after: all;'
+					/>
+					<Entry_Params
+						tailparam='break-after-avoid-page'
+						cssparam='break-after: avoid-page;'
+					/>
+					<Entry_Params
+						tailparam='break-after-left'
+						cssparam='break-after: left;'
+					/>
+					<Entry_Params
+						tailparam='break-after-right'
+						cssparam='break-after-right'
+					/>
+					<Entry_Params
+						tailparam='break-after-column'
+						cssparam='break-after: column;'
+					/>
+				</section>
+			</Accordion>
+
+			<Accordion
+				accordion_title='Break Before'
+				accordion_description='Utilities for controlling how a column or page should Before after an element.'>
+				<section
+					class='overflow-hidden border-b-2 rounded-md border-picton-blue-950'>
+					<Entry_Params
+						tailparam='break-before-auto'
+						cssparam='break-before: auto;'
+					/>
+					<Entry_Params
+						tailparam='break-before-avoid'
+						cssparam='break-before: avoid;'
+					/>
+					<Entry_Params
+						tailparam='break-before-all'
+						cssparam='break-before: all;'
+					/>
+					<Entry_Params
+						tailparam='break-before-avoid-page'
+						cssparam='break-before: avoid-page;'
+					/>
+					<Entry_Params
+						tailparam='break-before-left'
+						cssparam='break-before: left;'
+					/>
+					<Entry_Params
+						tailparam='break-before-right'
+						cssparam='break-before-right'
+					/>
+					<Entry_Params
+						tailparam='break-before-column'
+						cssparam='break-before: column;'
+					/>
+				</section>
+			</Accordion>
+
+			<Accordion
+				accordion_title='Break Inside'
+				accordion_description='Utilities for controlling how a column or page should break within an element.'>
+				<section
+					class='overflow-hidden border-b-2 rounded-md border-picton-blue-950'>
+					<Entry_Params
+						tailparam='break-inside-auto'
+						cssparam='break-inside: auto;'
+					/>
+					<Entry_Params
+						tailparam='break-inside-avoid'
+						cssparam='break-inside: avoid;'
+					/>
+					<Entry_Params
+						tailparam='break-inside-avoid-page'
+						cssparam='break-inside: avoid-page;'
+					/>
+					<Entry_Params
+						tailparam='break-inside-column'
+						cssparam='break-inside: column;'
+					/>
+				</section>
+			</Accordion>
+
+			<Accordion
+				accordion_title='Box Decoration Break'
+				accordion_description='Utilities for controlling how element fragments should be rendered across multiple lines, columns, or pages.'>
+				<section
+					class='overflow-hidden border-b-2 rounded-md border-picton-blue-950'>
+					<Entry_Params
+						tailparam='decoration-slice'
+						cssparam='box-decoration-break: slice;'
+					/>
+					<Entry_Params
+						tailparam='decoration-clone'
+						cssparam='box-decoration-break: clone;'
+					/>
+				</section>
+			</Accordion>
+
+			<Accordion
+				accordion_title='Box Sizing'
+				accordion_description='Sets how the total width and height of an element is calculated.'>
+				<section
+					class='overflow-hidden border-b-2 rounded-md border-picton-blue-950'>
+					<Entry_Params
+						tailparam='box-border'
+						cssparam='box-sizing: border-box;'
+					/>
+					<Entry_Params
+						tailparam='box-content'
+						cssparam='box-sizing: content-box;'
+					/>
+				</section>
+			</Accordion>
+
+			<Accordion
+				accordion_title='Display'
+				accordion_description='Sets the display box type of an element.'>
+				<section
+					class='overflow-hidden border-b-2 rounded-md border-picton-blue-950'>
+					<Entry_Params
+						tailparam='block'
+						cssparam='display: block;'
+					/>
+					<Entry_Params
+						tailparam='inline-block'
+						cssparam='display: inline-block;'
+					/>
+					<Entry_Params
+						tailparam='inline'
+						cssparam='display: inline;'
+					/>
+					<Entry_Params tailparam='flex' cssparam='display: flex;' />
+					<Entry_Params
+						tailparam='inline-flex'
+						cssparam='display: inline-flex;'
+					/>
+					<Entry_Params
+						tailparam='table'
+						cssparam='display: table;'
+					/>
+					<Entry_Params
+						tailparam='inline-table'
+						cssparam='display: inline-table;'
+					/>
+					<Entry_Params
+						tailparam='table-caption'
+						cssparam='display: table-caption;'
+					/>
+					<Entry_Params
+						tailparam='table-cell'
+						cssparam='display: table-cell;'
+					/>
+					<Entry_Params
+						tailparam='table-column'
+						cssparam='display: table-column;'
+					/>
+					<Entry_Params
+						tailparam='table-column-group'
+						cssparam='display: table-column-group;'
+					/>
+					<Entry_Params
+						tailparam='table-footer-group'
+						cssparam='display: table-header-group;'
+					/>
+					<Entry_Params
+						tailparam='table-header-group'
+						cssparam='display: table-header-group;'
+					/>
+					<Entry_Params
+						tailparam='table-row-group'
+						cssparam='display: table-row-group;'
+					/>
+					<Entry_Params
+						tailparam='table-row'
+						cssparam='display: table-row;'
+					/>
+					<Entry_Params
+						tailparam='table-column-group'
+						cssparam='display: table-column-group;'
+					/>
+					<Entry_Params
+						tailparam='flow-row'
+						cssparam='display: flow-row;'
+					/>
+					<Entry_Params
+						tailparam='flow-root'
+						cssparam='display: flow-root;'
+					/>
+					<Entry_Params tailparam='grid' cssparam='display: grid;' />
+					<Entry_Params
+						tailparam='inline-grid'
+						cssparam='display: inline-grid;'
+					/>
+					<Entry_Params
+						tailparam='contents'
+						cssparam='display: contents;'
+					/>
+					<Entry_Params
+						tailparam='list-item'
+						cssparam='display: list-item;'
+					/>
+					<Entry_Params
+						tailparam='hidden'
+						cssparam='display: hidden;'
+					/>
+				</section>
+			</Accordion>
+
+			<Accordion
+				accordion_title='Float'
+				accordion_description='Sets an element-s placement to a side of its container and allows content to wrap around it.'>
+				<section
+					class='overflow-hidden border-b-2 rounded-md border-picton-blue-950'>
+					<Entry_Params
+						tailparam='float-right'
+						cssparam='float: right;'
+					/>
+					<Entry_Params
+						tailparam='float-left'
+						cssparam='float: left;'
+					/>
+					<Entry_Params
+						tailparam='float-none'
+						cssparam='float: none;'
+					/>
+				</section>
+			</Accordion>
+
+			<Accordion
+				accordion_title='Clear'
+				accordion_description='Sets whether an element is moved below preceding floated elements.'>
+				<section
+					class='overflow-hidden border-b-2 rounded-md border-picton-blue-950'>
+					<Entry_Params
+						tailparam='clear-left'
+						cssparam='clear: right;'
+					/>
+					<Entry_Params
+						tailparam='clear-right'
+						cssparam='clear: left;'
+					/>
+					<Entry_Params
+						tailparam='clear-both'
+						cssparam='clear: none;'
+					/>
+					<Entry_Params
+						tailparam='clear-none'
+						cssparam='clear: none;'
+					/>
+				</section>
+			</Accordion>
+
+			<Accordion
+				accordion_title='Isolation'
+				accordion_description='Sets whether an element is moved below preceding floated elements.'>
+				<section
+					class='overflow-hidden border-b-2 rounded-md border-picton-blue-950'>
+					<Entry_Params
+						tailparam='isolate'
+						cssparam='isolation: isolate;'
+					/>
+					<Entry_Params
+						tailparam='isolate-auto'
+						cssparam='isolation: auto;'
+					/>
+				</section>
+			</Accordion>
+
+			<Accordion
+				accordion_title='Object Fit'
+				accordion_description='Sets how the content of a replaced element (img or video tag) should be resized.'>
+				<section
+					class='overflow-hidden border-b-2 rounded-md border-picton-blue-950'>
+					<Entry_Params
+						tailparam='object-contain'
+						cssparam='object-fit: contain;'
+					/>
+					<Entry_Params
+						tailparam='object-cover'
+						cssparam='object-fit: cover;'
+					/>
+					<Entry_Params
+						tailparam='object-fill'
+						cssparam='object-fit: fill;'
+					/>
+					<Entry_Params
+						tailparam='object-none'
+						cssparam='object-fit: none;'
+					/>
+					<Entry_Params
+						tailparam='object-scale-down'
+						cssparam='object-fit: scale-down;'
+					/>
+				</section>
+			</Accordion>
+
+			<Accordion
+				accordion_title='Object Position'
+				accordion_description='Sets the alignment of the selected replaced element.'>
+				<section
+					class='overflow-hidden border-b-2 rounded-md border-picton-blue-950'>
+					<Entry_Params
+						tailparam='object-center'
+						cssparam='object-position: center;'
+					/>
+					<Entry_Params
+						tailparam='object-left'
+						cssparam='object-position: left;'
+					/>
+					<Entry_Params
+						tailparam='object-botton'
+						cssparam='object-position: bottom;'
+					/>
+					<Entry_Params
+						tailparam='object-left-botton'
+						cssparam='object-position: left bottom;'
+					/>
+					<Entry_Params
+						tailparam='object-left-top'
+						cssparam='object-position: left top;'
+					/>
+					<Entry_Params
+						tailparam='object-right'
+						cssparam='object-position: right;'
+					/>
+					<Entry_Params
+						tailparam='object-right-botton'
+						cssparam='object-position: right bottom;'
+					/>
+					<Entry_Params
+						tailparam='object-left-top'
+						cssparam='object-position: left top;'
+					/>
+					<Entry_Params
+						tailparam='object-top'
+						cssparam='object-position: top;'
+					/>
+				</section>
+			</Accordion>
+
+			<Accordion
+				accordion_title='Overflow'
+				accordion_description='Sets how to handle content that-s too big for its container.'>
+				<section
+					class='overflow-hidden border-b-2 rounded-md border-picton-blue-950'>
+					<Entry_Params
+						tailparam='overflow-auto'
+						cssparam='overflow: auto;'
+					/>
+					<Entry_Params
+						tailparam='overflow-x-auto'
+						cssparam='overflow-x: auto;'
+					/>
+					<Entry_Params
+						tailparam='overflow-y-auto'
+						cssparam='overflow-y: auto;'
+					/>
+					<Entry_Params
+						tailparam='overflow-hidden'
+						cssparam='overflow: hidden;'
+					/>
+					<Entry_Params
+						tailparam='overflow-x-hidden'
+						cssparam='overflow-x: hidden;'
+					/>
+					<Entry_Params
+						tailparam='overflow-y-hidden'
+						cssparam='overflow-y: hidden;'
+					/>
+					<Entry_Params
+						tailparam='overflow-visible'
+						cssparam='overflow: visible;'
+					/>
+					<Entry_Params
+						tailparam='overflow-x-visible'
+						cssparam='overflow-x: visible;'
+					/>
+					<Entry_Params
+						tailparam='overflow-y-visible'
+						cssparam='overflow-y: visible;'
+					/>
+					<Entry_Params
+						tailparam='overflow-scroll'
+						cssparam='overflow: scroll;'
+					/>
+					<Entry_Params
+						tailparam='overflow-x-scroll'
+						cssparam='overflow-x: scroll;'
+					/>
+					<Entry_Params
+						tailparam='overflow-y-scroll'
+						cssparam='overflow-y: scroll;'
+					/>
+					<Entry_Params
+						tailparam='scrolling-touch'
+						cssparam='-webkit-overflow-scrolling: touch;'
+					/>
+					<Entry_Params
+						tailparam='scrolling-auto'
+						cssparam='-webkit-overflow-scrolling: auto;'
+					/>
+				</section>
+			</Accordion>
+
+			<Accordion
+				accordion_title='Overscroll Behavior'
+				accordion_description='Sets of utilities for controlling how the browser behaves when reaching the boundary of a scrolling area.'>
+				<section
+					class='overflow-hidden border-b-2 rounded-md border-picton-blue-950'>
+					<Entry_Params
+						tailparam='overscroll-auto'
+						cssparam='overscroll-behavior: auto;'
+					/>
+					<Entry_Params
+						tailparam='overscroll-x-auto'
+						cssparam='overscroll-x-behavior: auto;'
+					/>
+					<Entry_Params
+						tailparam='overscroll-y-auto'
+						cssparam='overscroll-y-behavior: auto;'
+					/>
+					<Entry_Params
+						tailparam='overscroll-contain'
+						cssparam='overscroll-behavior: contain;'
+					/>
+					<Entry_Params
+						tailparam='overscroll-x-contain'
+						cssparam='overscroll-x-behavior: contain;'
+					/>
+					<Entry_Params
+						tailparam='overscroll-y-contain'
+						cssparam='overscroll-y-behavior: contain;'
+					/>
+					<Entry_Params
+						tailparam='overscroll-none'
+						cssparam='overscroll-behavior: none;'
+					/>
+					<Entry_Params
+						tailparam='overscroll-x-none'
+						cssparam='overscroll-x-behavior: none;'
+					/>
+					<Entry_Params
+						tailparam='overscroll-y-none'
+						cssparam='overscroll-y-behavior: none;'
+					/>
+				</section>
+			</Accordion>
+
+			<Accordion
+				accordion_title='Position'
+				accordion_description='Sets an element-s position.'>
+				<section
+					class='overflow-hidden border-b-2 rounded-md border-picton-blue-950'>
+					<Entry_Params
+						tailparam='static'
+						cssparam='position: static;'
+					/>
+					<Entry_Params
+						tailparam='fixed'
+						cssparam='position: fixed;'
+					/>
+					<Entry_Params
+						tailparam='absolute'
+						cssparam='position: absolute;'
+					/>
+					<Entry_Params
+						tailparam='relative'
+						cssparam='position: relative;'
+					/>
+					<Entry_Params
+						tailparam='sticky'
+						cssparam='position: sticky;'
+					/>
+				</section>
+			</Accordion>
+
+			<Accordion
+				accordion_title='Visibility'
+				accordion_description='Show or hide without affecting the layout of the document.'>
+				<section
+					class='overflow-hidden border-b-2 rounded-md border-picton-blue-950'>
+					<Entry_Params
+						tailparam='visible'
+						cssparam='visibility: visible;'
+					/>
+					<Entry_Params
+						tailparam='invisible'
+						cssparam='visibility: hidden;'
+					/>
+				</section>
+			</Accordion>
+
+			<Accordion
+				accordion_title='Z-Index'
+				accordion_description='Sets the z-order ("stack order") of a positioned element.'>
+				<section
+					class='overflow-hidden border-b-2 rounded-md border-picton-blue-950'>
+					<Entry_Params tailparam='z-0' cssparam='z-index: 0;' />
+					<Entry_Params tailparam='z-10' cssparam='z-index: 10;' />
+					<Entry_Params tailparam='z-20' cssparam='z-index: 20;' />
+					<Entry_Params tailparam='z-30' cssparam='z-index: 30;' />
+					<Entry_Params tailparam='z-40' cssparam='z-index: 40;' />
+					<Entry_Params tailparam='z-05' cssparam='z-index: 50;' />
+					<Entry_Params
+						tailparam='z-auto'
+						cssparam='z-index: auto;'
+					/>
+				</section>
+			</Accordion>
+		</div>
+	</section>
+</Base>

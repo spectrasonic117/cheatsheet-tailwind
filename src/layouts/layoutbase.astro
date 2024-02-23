@@ -1,0 +1,29 @@
+---
+interface Props {
+	title: string;
+	description: string;
+}
+
+const { title, description } = Astro.props;
+
+import Side_Bar from '@components/Index/Side_Bar.astro';
+
+import './tailwind.css';
+---
+
+<html lang='en'>
+	<head>
+		<meta charset='utf-8' />
+		<link rel='icon' type='image/svg+xml' href='/favicon.svg' />
+		<meta name='viewport' content='width=device-width' />
+		<meta name='description' content={description} />
+		<title>{title}</title>
+	</head>
+	<body class='w-full h-[100vh] bg-picton-blue-950 grid grid-cols-4'>
+		<Side_Bar />
+
+		<section class='overflow-y-scroll col-span-3 w-full no-scroll p-10'>
+			<slot />
+		</section>
+	</body>
+</html>

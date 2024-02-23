@@ -1,0 +1,22 @@
+---
+import Base from '@layouts/layoutbase.astro';
+import Accordion from '@components/Accordion.astro';
+import Entry_Params from '@components/Entry_Accordion.astro';
+
+const title = 'Spacing';
+const description = 'Tailwind Cheatsheet for Offline use.';
+---
+
+<Base title={title} description={description}>
+	<section class='w-full text-picton-blue-50'>
+		<h1 class='mb-16 text-5xl font-bold'>Sizing</h1>
+		<div class='flex flex-col items-center justify-center'>
+			<Accordion accordion_title='Wdith' accordion_description=''>
+				<section
+					class='overflow-hidden border-b-2 rounded-md border-picton-blue-950'>
+					<Entry_Params tailparam='w-0' cssparam='width: 0;' />
+				</section>
+			</Accordion>
+		</div>
+	</section>
+</Base>

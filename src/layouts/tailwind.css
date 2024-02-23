@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	.test {
+		@apply border-[#ff0000] border-dotted border-2;
+	}
+
+	nav > ul > a {
+		@apply hover:bg-picton-blue-800 p-2 rounded-md;
+	}
+
+	.no-scroll {
+		scrollbar-color: #e0f5fe transparent;
+	}
+}

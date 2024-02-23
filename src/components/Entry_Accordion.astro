@@ -1,0 +1,28 @@
+---
+interface Props {
+	tailparam: string;
+	cssparam: string;
+}
+
+const { tailparam, cssparam } = Astro.props;
+---
+
+<article
+	id='Entry'
+	class='flex items-center justify-between w-full px-20 py-4 text-lg border-b-2 border-picton-blue-950 bg-picton-blue-900 text-picton-blue-100'>
+	<p
+		id='entry'
+		onclick='coppyToClipboard()'
+		class='cursor-pointer hover:text-picton-blue-300'>
+		{tailparam}
+	</p>
+	<p>{cssparam}</p>
+</article>
+
+<script is:inline>
+	function coppyToClipboard() {
+		const entry = document.getElementById('entry').innerText;
+		navigator.clipboard.writeText(entry);
+		console.log(entry);
+	}
+</script>

@@ -1,0 +1,296 @@
+---
+import Base from '@layouts/layoutbase.astro';
+import Accordion from '@components/Accordion.astro';
+import Entry_Params from '@components/Entry_Accordion.astro';
+
+const title = 'Flexbox & Grid';
+const description = 'Tailbasisind Cheatsheet for Offline use.';
+---
+
+<Base title={title} description={description}>
+	<section class='basis-full text-picton-blue-50'>
+		<h1 class='mb-16 text-5xl font-bold'>Sizing</h1>
+		<div class='flex flex-col items-center justify-center'>
+			<Accordion
+				accordion_title='Flex Basis'
+				accordion_description='Utilities for controlling the initial size of flex items.'>
+				<section
+					class='border-b-2 rounded-md overflobasis-hidden border-picton-blue-950'>
+					<Entry_Params tailparam='basis-0' cssparam='flex-basis: 0;' />
+					<Entry_Params
+						tailparam='basis-0.5'
+						cssparam='flex-basis: 0.125rem; 2px'
+					/>
+					<Entry_Params
+						tailparam='basis-1'
+						cssparam='flex-basis: 0.25rem; 4px'
+					/>
+					<Entry_Params
+						tailparam='basis-1.5'
+						cssparam='flex-basis: 0.375rem; 6px'
+					/>
+					<Entry_Params
+						tailparam='basis-2'
+						cssparam='flex-basis: 0.5rem; 8px'
+					/>
+					<Entry_Params
+						tailparam='basis-2.5'
+						cssparam='flex-basis: 0.625rem; 10px'
+					/>
+					<Entry_Params
+						tailparam='basis-3'
+						cssparam='flex-basis: 0.75rem; 12px'
+					/>
+					<Entry_Params
+						tailparam='basis-3.5'
+						cssparam='flex-basis: 0.875rem; 14px'
+					/>
+					<Entry_Params tailparam='basis-4' cssparam='flex-basis: 1rem; 16px' />
+					<Entry_Params
+						tailparam='basis-5'
+						cssparam='flex-basis: 1.25rem; 20px'
+					/>
+					<Entry_Params
+						tailparam='basis-6'
+						cssparam='flex-basis: 1.5rem; 24px'
+					/>
+					<Entry_Params tailparam='basis-8' cssparam='flex-basis: 2rem; 32px' />
+					<Entry_Params
+						tailparam='basis-10'
+						cssparam='flex-basis: 2.5rem; 40px'
+					/>
+					<Entry_Params
+						tailparam='basis-11'
+						cssparam='flex-basis: 2.75rem; 44px'
+					/>
+					<Entry_Params
+						tailparam='basis-12'
+						cssparam='flex-basis: 3rem; 48px'
+					/>
+					<Entry_Params
+						tailparam='basis-14'
+						cssparam='flex-basis: 3.5rem; 56px'
+					/>
+					<Entry_Params
+						tailparam='basis-16'
+						cssparam='flex-basis: 4rem; 64px'
+					/>
+					<Entry_Params tailparam='basis-20' cssparam='flex-basis: 5em; 80px' />
+					<Entry_Params
+						tailparam='basis-24'
+						cssparam='flex-basis: 6rem; 96px'
+					/>
+					<Entry_Params
+						tailparam='basis-28'
+						cssparam='flex-basis: 7rem; 112px'
+					/>
+					<Entry_Params
+						tailparam='basis-32'
+						cssparam='flex-basis: 8rem; 128px'
+					/>
+					<Entry_Params
+						tailparam='basis-36'
+						cssparam='flex-basis: 9rem; 144px'
+					/>
+					<Entry_Params
+						tailparam='basis-40'
+						cssparam='flex-basis: 10rem; 160px'
+					/>
+					<Entry_Params
+						tailparam='basis-44'
+						cssparam='flex-basis: 11rem; 176px'
+					/>
+					<Entry_Params
+						tailparam='basis-48'
+						cssparam='flex-basis: 12rem; 192px'
+					/>
+					<Entry_Params
+						tailparam='basis-52'
+						cssparam='flex-basis: 13rem; 208px'
+					/>
+					<Entry_Params
+						tailparam='basis-56'
+						cssparam='flex-basis: 14rem; 224px'
+					/>
+					<Entry_Params
+						tailparam='basis-64'
+						cssparam='flex-basis: 16rem; 256px'
+					/>
+					<Entry_Params
+						tailparam='basis-72'
+						cssparam='flex-basis: 18rem; 288px'
+					/>
+					<Entry_Params
+						tailparam='basis-80'
+						cssparam='flex-basis: 20rem; 320px'
+					/>
+					<Entry_Params
+						tailparam='basis-96'
+						cssparam='flex-basis: 24rem; 384px'
+					/>
+					<Entry_Params tailparam='basis-auto' cssparam='flex-basis: auto' />
+					<Entry_Params tailparam='basis-1/2' cssparam='flex-basis: 50%;' />
+					<Entry_Params tailparam='basis-(1 to 2)/3' cssparam='' />
+					<Entry_Params tailparam='basis-(1 to 3)/4' cssparam='' />
+					<Entry_Params tailparam='basis-(1 to 4)/5' cssparam='' />
+					<Entry_Params tailparam='basis-(1 to 5)/6' cssparam='' />
+					<Entry_Params tailparam='basis-(1 to 11)/12' cssparam='' />
+					<Entry_Params tailparam='basis-full' cssparam='flex-basis: 100%' />
+				</section>
+			</Accordion>
+
+			<Accordion
+				accordion_title='Flex Direction'
+				accordion_description='Sets direction of flex items.'>
+				<section
+					class='overflow-hidden border-b-2 rounded-md border-picton-blue-950'>
+					<Entry_Params tailparam='flex-row' cssparam='flex-direction: row;' />
+					<Entry_Params
+						tailparam='flex-row-reverse'
+						cssparam='flex-direction: row-reverse;'
+					/>
+					<Entry_Params
+						tailparam='flex-col'
+						cssparam='flex-direction: column;'
+					/>
+					<Entry_Params
+						tailparam='flex-col-reverse'
+						cssparam='flex-direction: column-reverse;'
+					/>
+				</section>
+			</Accordion>
+
+			<Accordion
+				accordion_title='Flex Wrap'
+				accordion_description='Creates how flex items wrap.'>
+				<section
+					class='overflow-hidden border-b-2 rounded-md border-picton-blue-950'>
+					<Entry_Params tailparam='flex-nowrap' cssparam='flex-wrap: nowrap;' />
+					<Entry_Params tailparam='flex-wrap' cssparam='flex-wrap: wrap;' />
+					<Entry_Params
+						tailparam='flex-wrap-reverse'
+						cssparam='flex-wrap: wrap-reverse;'
+					/>
+				</section>
+			</Accordion>
+
+			<Accordion
+				accordion_title='Flex'
+				accordion_description='Controls how flex items grow and shrink.'>
+				<section
+					class='overflow-hidden border-b-2 rounded-md border-picton-blue-950'>
+					<Entry_Params tailparam='flex-1' cssparam='flex: 1 1 0%;' />
+					<Entry_Params tailparam='flex-auto' cssparam='flex: 1 1 auto;' />
+					<Entry_Params tailparam='flex-inital' cssparam='flex: 0 1 auto;' />
+					<Entry_Params tailparam='flex-none' cssparam='flex: none' />
+				</section>
+			</Accordion>
+
+			<Accordion
+				accordion_title='Flex Grow'
+				accordion_description='Controls how flex items grow.'>
+				<section
+					class='overflow-hidden border-b-2 rounded-md border-picton-blue-950'>
+					<Entry_Params tailparam='grow' cssparam='flex-grow: 1;' />
+					<Entry_Params tailparam='grow-0' cssparam='flex-grow: 0;' />
+				</section>
+			</Accordion>
+
+			<Accordion
+				accordion_title='Flex Shrink'
+				accordion_description='Controls how flex items shrink.'>
+				<section
+					class='overflow-hidden border-b-2 rounded-md border-picton-blue-950'>
+					<Entry_Params tailparam='shrink-1' cssparam='shrink: 1;' />
+					<Entry_Params tailparam='shrink-0' cssparam='shrink: 0;' />
+				</section>
+			</Accordion>
+
+			<Accordion
+				accordion_title='Order'
+				accordion_description='Controls how flex items are ordered.'>
+				<section
+					class='overflow-hidden border-b-2 rounded-md border-picton-blue-950'>
+					<Entry_Params tailparam='order-first' cssparam='order: -9999;' />
+					<Entry_Params tailparam='order-last' cssparam='order: 9999;' />
+					<Entry_Params tailparam='order-1' cssparam='order: 1;' />
+					<Entry_Params tailparam='order-2' cssparam='order: 2;' />
+					<Entry_Params tailparam='order-3' cssparam='order: 3;' />
+					<Entry_Params tailparam='order-4' cssparam='order: 4;' />
+					<Entry_Params tailparam='order-5' cssparam='order: 5;' />
+					<Entry_Params tailparam='order-6' cssparam='order: 6;' />
+					<Entry_Params tailparam='order-7' cssparam='order: 7;' />
+					<Entry_Params tailparam='order-8' cssparam='order: 8;' />
+					<Entry_Params tailparam='order-9' cssparam='order: 9;' />
+					<Entry_Params tailparam='order-10' cssparam='order: 10;' />
+					<Entry_Params tailparam='order-11' cssparam='order: 11;' />
+					<Entry_Params tailparam='order-12' cssparam='order: 12;' />
+				</section>
+			</Accordion>
+
+			<Accordion
+				accordion_title='Grid Temaple Columns'
+				accordion_description='Defines columns for grid layout.'>
+				<section
+					class='overflow-hidden border-b-2 rounded-md border-picton-blue-950'>
+					<Entry_Params
+						tailparam='grid-cols-1'
+						cssparam='grid-template-columns: repeat(1, minmax(0, 1fr));'
+					/>
+					<Entry_Params
+						tailparam='grid-cols-2'
+						cssparam='grid-template-columns: repeat(2, minmax(0, 1fr));'
+					/>
+					<Entry_Params
+						tailparam='grid-cols-3'
+						cssparam='grid-template-columns: repeat(3, minmax(0, 1fr));'
+					/>
+					<Entry_Params
+						tailparam='grid-cols-4'
+						cssparam='grid-template-columns: repeat(4, minmax(0, 1fr));'
+					/>
+					<Entry_Params
+						tailparam='grid-cols-5'
+						cssparam='grid-template-columns: repeat(5, minmax(0, 1fr));'
+					/>
+					<Entry_Params
+						tailparam='grid-cols-6'
+						cssparam='grid-template-columns: repeat(6, minmax(0, 1fr));'
+					/>
+					<Entry_Params
+						tailparam='grid-cols-7'
+						cssparam='grid-template-columns: repeat(7, minmax(0, 1fr));'
+					/>
+					<Entry_Params
+						tailparam='grid-cols-8'
+						cssparam='grid-template-columns: repeat(8, minmax(0, 1fr));'
+					/>
+					<Entry_Params
+						tailparam='grid-cols-9'
+						cssparam='grid-template-columns: repeat(9, minmax(0, 1fr));'
+					/>
+					<Entry_Params
+						tailparam='grid-cols-10'
+						cssparam='grid-template-columns: repeat(10, minmax(0, 1fr));'
+					/>
+					<Entry_Params
+						tailparam='grid-cols-11'
+						cssparam='grid-template-columns: repeat(11, minmax(0, 1fr));'
+					/>
+					<Entry_Params
+						tailparam='grid-cols-12'
+						cssparam='grid-template-columns: repeat(12, minmax(0, 1fr));'
+					/>
+					<Entry_Params tailparam='grid-cols-none' cssparam='CSSPARAM' />
+				</section>
+			</Accordion>
+
+			<Accordion accordion_title='TITTLE' accordion_description='DESCRIPTION'>
+				<section
+					class='overflow-hidden border-b-2 rounded-md border-picton-blue-950'>
+					<Entry_Params tailparam='TAILPARAM' cssparam='CSSPARAM' />
+				</section>
+			</Accordion>
+		</div>
+	</section>
+</Base>

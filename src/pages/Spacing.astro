@@ -9,12 +9,92 @@ const description = 'Tailwind Cheatsheet for Offline use.';
 
 <Base title={title} description={description}>
 	<section class='w-full text-picton-blue-50'>
-		<h1 class='mb-16 text-5xl font-bold'>Sizing</h1>
+		<h1 class='mb-16 text-5xl font-bold'>{title}</h1>
 		<div class='flex flex-col items-center justify-center'>
-			<Accordion accordion_title='Wdith' accordion_description=''>
+			<Accordion
+				accordion_title='Padding'
+				accordion_description='Controls margin in 0.25rem increments. [Can use negative numbers using -p-0]'>
 				<section
 					class='overflow-hidden border-b-2 rounded-md border-picton-blue-950'>
-					<Entry_Params tailparam='w-0' cssparam='width: 0;' />
+					<Entry_Params tailparam='p-0' cssparam='padding: 0;' />
+					<Entry_Params tailparam='p-0.5' cssparam='padding: 0.125rem; 2px' />
+					<Entry_Params tailparam='p-1' cssparam='padding: 0.25rem; 4px' />
+					<Entry_Params tailparam='p-1.5' cssparam='padding: 0.375rem; 6px' />
+					<Entry_Params tailparam='p-2' cssparam='padding: 0.5rem; 8px' />
+					<Entry_Params tailparam='p-2.5' cssparam='padding: 0.625rem; 10px' />
+					<Entry_Params tailparam='p-3' cssparam='padding: 0.75rem; 12px' />
+					<Entry_Params tailparam='p-3.5' cssparam='padding: 0.875rem; 14px' />
+					<Entry_Params tailparam='p-4' cssparam='padding: 1rem; 16px' />
+					<Entry_Params tailparam='p-5' cssparam='padding: 1.25rem; 20px' />
+					<Entry_Params tailparam='p-6' cssparam='padding: 1.5rem; 24px' />
+					<Entry_Params tailparam='p-8' cssparam='padding: 2rem; 32px' />
+					<Entry_Params tailparam='p-10' cssparam='padding: 2.5rem; 40px' />
+					<Entry_Params tailparam='p-11' cssparam='padding: 2.75rem; 44px' />
+					<Entry_Params tailparam='p-12' cssparam='padding: 3rem; 48px' />
+					<Entry_Params tailparam='p-14' cssparam='padding: 3.5rem; 56px' />
+					<Entry_Params tailparam='p-16' cssparam='padding: 4rem; 64px' />
+					<Entry_Params tailparam='p-20' cssparam='padding: 5em; 80px' />
+					<Entry_Params tailparam='p-24' cssparam='padding: 6rem; 96px' />
+					<Entry_Params tailparam='p-28' cssparam='padding: 7rem; 112px' />
+					<Entry_Params tailparam='p-32' cssparam='padding: 8rem; 128px' />
+					<Entry_Params tailparam='p-36' cssparam='padding: 9rem; 144px' />
+					<Entry_Params tailparam='p-40' cssparam='padding: 10rem; 160px' />
+					<Entry_Params tailparam='w-44' cssparam='padding: 11rem; 176px' />
+					<Entry_Params tailparam='p-48' cssparam='padding: 12rem; 192px' />
+					<Entry_Params tailparam='p-52' cssparam='padding: 13rem; 208px' />
+					<Entry_Params tailparam='p-56' cssparam='padding: 14rem; 224px' />
+					<Entry_Params tailparam='p-64' cssparam='padding: 16rem; 256px' />
+					<Entry_Params tailparam='p-72' cssparam='padding: 18rem; 288px' />
+					<Entry_Params tailparam='p-80' cssparam='padding: 20rem; 320px' />
+					<Entry_Params tailparam='p-96' cssparam='padding: 24rem; 384px' />
+				</section>
+			</Accordion>
+
+			<Accordion
+				accordion_title='Margin'
+				accordion_description='Controls Margin (and negative margin) in 0.25rem increments. [Can use negative numbers using -m-0]'>
+				<section
+					class='overflow-hidden border-b-2 rounded-md border-picton-blue-950'>
+					<Entry_Params tailparam='m-0' cssparam='margin: 0;' />
+					<Entry_Params tailparam='m-0.5' cssparam='margin: 0.125rem; 2px' />
+					<Entry_Params tailparam='m-1' cssparam='margin: 0.25rem; 4px' />
+					<Entry_Params tailparam='m-1.5' cssparam='margin: 0.375rem; 6px' />
+					<Entry_Params tailparam='m-2' cssparam='margin: 0.5rem; 8px' />
+					<Entry_Params tailparam='m-2.5' cssparam='margin: 0.625rem; 10px' />
+					<Entry_Params tailparam='m-3' cssparam='margin: 0.75rem; 12px' />
+					<Entry_Params tailparam='m-3.5' cssparam='margin: 0.875rem; 14px' />
+					<Entry_Params tailparam='m-4' cssparam='margin: 1rem; 16px' />
+					<Entry_Params tailparam='m-5' cssparam='margin: 1.25rem; 20px' />
+					<Entry_Params tailparam='m-6' cssparam='margin: 1.5rem; 24px' />
+					<Entry_Params tailparam='m-8' cssparam='margin: 2rem; 32px' />
+					<Entry_Params tailparam='m-10' cssparam='margin: 2.5rem; 40px' />
+					<Entry_Params tailparam='m-11' cssparam='margin: 2.75rem; 44px' />
+					<Entry_Params tailparam='m-12' cssparam='margin: 3rem; 48px' />
+					<Entry_Params tailparam='m-14' cssparam='margin: 3.5rem; 56px' />
+					<Entry_Params tailparam='m-16' cssparam='margin: 4rem; 64px' />
+					<Entry_Params tailparam='m-20' cssparam='margin: 5em; 80px' />
+					<Entry_Params tailparam='m-24' cssparam='margin: 6rem; 96px' />
+					<Entry_Params tailparam='m-28' cssparam='margin: 7rem; 112px' />
+					<Entry_Params tailparam='m-32' cssparam='margin: 8rem; 128px' />
+					<Entry_Params tailparam='m-36' cssparam='margin: 9rem; 144px' />
+					<Entry_Params tailparam='m-40' cssparam='margin: 10rem; 160px' />
+					<Entry_Params tailparam='w-44' cssparam='margin: 11rem; 176px' />
+					<Entry_Params tailparam='m-48' cssparam='margin: 12rem; 192px' />
+					<Entry_Params tailparam='m-52' cssparam='margin: 13rem; 208px' />
+					<Entry_Params tailparam='m-56' cssparam='margin: 14rem; 224px' />
+					<Entry_Params tailparam='m-64' cssparam='margin: 16rem; 256px' />
+					<Entry_Params tailparam='m-72' cssparam='margin: 18rem; 288px' />
+					<Entry_Params tailparam='m-80' cssparam='margin: 20rem; 320px' />
+					<Entry_Params tailparam='m-96' cssparam='margin: 24rem; 384px' />
+				</section>
+			</Accordion>
+
+			<Accordion
+				accordion_title='Space Between'
+				accordion_description='Controls margin between child elements [Can use negative numbers using -space-x-0]'>
+				<section
+					class='overflow-hidden border-b-2 rounded-md border-picton-blue-950'>
+					<Entry_Params tailparam='space-x-0' cssparam='margin-left: 0;' />
 				</section>
 			</Accordion>
 		</div>

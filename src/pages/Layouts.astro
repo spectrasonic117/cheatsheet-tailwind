@@ -9,7 +9,7 @@ const description = 'Tailwind Cheatsheet for Offline use.';
 
 <Base title={title} description={description}>
 	<section class='w-full text-picton-blue-50'>
-		<h1 class='mb-16 text-5xl font-bold'>Layouts</h1>
+		<h1 class='mb-16 text-5xl font-bold'>{title}</h1>
 
 		<div class='flex flex-col items-center justify-center'>
 			<Accordion
@@ -34,25 +34,25 @@ const description = 'Tailwind Cheatsheet for Offline use.';
 
 			<Accordion
 				accordion_title='Container'
-				accordion_description='Sets the max-width to match the min-width of the current breakpoint.'>
+				accordion_description='Sets the max-padding to match the min-padding of the current breakpoint.'>
 				<section
 					class='overflow-hidden border-b-2 rounded-md border-picton-blue-950'>
-					<Entry_Params tailparam='none' cssparam='width: 100%' />
+					<Entry_Params tailparam='none' cssparam='padding: 100%' />
 					<Entry_Params
 						tailparam='md (768px)'
-						cssparam='max-width: 768px;'
+						cssparam='max-padding: 768px;'
 					/>
 					<Entry_Params
 						tailparam='lg (1024px)'
-						cssparam='max-width: 1024px;'
+						cssparam='max-padding: 1024px;'
 					/>
 					<Entry_Params
 						tailparam='xl (1280px)'
-						cssparam='max-width: 1280px;'
+						cssparam='max-padding: 1280px;'
 					/>
 					<Entry_Params
 						tailparam='2xl (1536px)'
-						cssparam='max-width: 1536px;'
+						cssparam='max-padding: 1536px;'
 					/>
 				</section>
 			</Accordion>
@@ -62,7 +62,7 @@ const description = 'Tailwind Cheatsheet for Offline use.';
 				accordion_description='Utilities for controlling the number of columns within an element.'>
 				<section
 					class='overflow-hidden border-b-2 rounded-md border-picton-blue-950'>
-					<Entry_Params tailparam='none' cssparam='width: 100%' />
+					<Entry_Params tailparam='none' cssparam='padding: 100%' />
 					<Entry_Params
 						tailparam='columns-1'
 						cssparam='columns: 1;'
@@ -284,7 +284,7 @@ const description = 'Tailwind Cheatsheet for Offline use.';
 
 			<Accordion
 				accordion_title='Box Sizing'
-				accordion_description='Sets how the total width and height of an element is calculated.'>
+				accordion_description='Sets how the total padding and height of an element is calculated.'>
 				<section
 					class='overflow-hidden border-b-2 rounded-md border-picton-blue-950'>
 					<Entry_Params

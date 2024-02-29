@@ -1,0 +1,376 @@
+---
+import Base from '@layouts/layoutbase.astro';
+import Accordion from '@components/Accordion.astro';
+import Entry_Params_Color from '@components/Entry_Accordion_Color.astro';
+
+const title = 'Color Palette';
+const description = 'Tailwind Cheatsheet for Offline use.';
+---
+
+<Base title={title} description={description}>
+	<section class='w-full text-picton-blue-50'>
+		<h1 class='mb-16 text-5xl font-bold'>{title}</h1>
+		<div class='flex flex-col items-center justify-center'>
+			<Accordion accordion_title='Slate' accordion_description=''>
+				<section
+					class='overflow-hidden border-b-2 rounded-md border-picton-blue-950'>
+					<Entry_Params_Color tailwindcolor='#f8fafc' tailparam='slate-50' />
+					<Entry_Params_Color tailwindcolor='#f1f5f9' tailparam='slate-100' />
+					<Entry_Params_Color tailwindcolor='#e2e8f0' tailparam='slate-200' />
+					<Entry_Params_Color tailwindcolor='#cbd5e1' tailparam='slate-300' />
+					<Entry_Params_Color tailwindcolor='#94a3b8' tailparam='slate-400' />
+					<Entry_Params_Color tailwindcolor='#64748b' tailparam='slate-500' />
+					<Entry_Params_Color tailwindcolor='#475569' tailparam='slate-600' />
+					<Entry_Params_Color tailwindcolor='#334155' tailparam='slate-700' />
+					<Entry_Params_Color tailwindcolor='#1e293b' tailparam='slate-800' />
+					<Entry_Params_Color tailwindcolor='#0f172a' tailparam='slate-900' />
+					<Entry_Params_Color tailwindcolor='#020617' tailparam='slate-950' />
+				</section>
+			</Accordion>
+
+			<Accordion accordion_title='Gray' accordion_description=''>
+				<section
+					class='overflow-hidden border-b-2 rounded-md border-picton-blue-950'>
+					<Entry_Params_Color tailwindcolor='#f9fafb' tailparam='gray-50' />
+					<Entry_Params_Color tailwindcolor='#f3f4f6' tailparam='gray-100' />
+					<Entry_Params_Color tailwindcolor='#e5e7eb' tailparam='gray-200' />
+					<Entry_Params_Color tailwindcolor='#d1d5db' tailparam='gray-300' />
+					<Entry_Params_Color tailwindcolor='#9ca3af' tailparam='gray-400' />
+					<Entry_Params_Color tailwindcolor='#6b7280' tailparam='gray-500' />
+					<Entry_Params_Color
+						tailwindcolor='#4b5563'
+						tailparam='gray-600'
+						cssparam='#4b5563'
+					/>
+					<Entry_Params_Color tailwindcolor='#374151' tailparam='gray-700' />
+					<Entry_Params_Color tailwindcolor='#1f2937' tailparam='gray-800' />
+					<Entry_Params_Color tailwindcolor='#111827' tailparam='gray-900' />
+					<Entry_Params_Color tailwindcolor='#030712' tailparam='gray-950' />
+				</section>
+			</Accordion>
+
+			<Accordion accordion_title='Zinc' accordion_description=''>
+				<section
+					class='overflow-hidden border-b-2 rounded-md border-picton-blue-950'>
+					<Entry_Params_Color tailwindcolor='#fafafa' tailparam='zinc-50' />
+					<Entry_Params_Color tailwindcolor='#f4f4f5' tailparam='zinc-100' />
+					<Entry_Params_Color tailwindcolor='#e4e4e7' tailparam='zinc-200' />
+					<Entry_Params_Color tailwindcolor='#d4d4d8' tailparam='zinc-300' />
+					<Entry_Params_Color tailwindcolor='#a1a1aa' tailparam='zinc-400' />
+					<Entry_Params_Color tailwindcolor='#71717a' tailparam='zinc-500' />
+					<Entry_Params_Color tailwindcolor='#52525b' tailparam='zinc-600' />
+					<Entry_Params_Color tailwindcolor='#3f3f46' tailparam='zinc-700' />
+					<Entry_Params_Color tailwindcolor='#27272a' tailparam='zinc-800' />
+					<Entry_Params_Color tailwindcolor='#18181b' tailparam='zinc-900' />
+					<Entry_Params_Color tailwindcolor='#09090b' tailparam='zinc-950' />
+				</section>
+			</Accordion>
+
+			<Accordion accordion_title='Neutral' accordion_description=''>
+				<section
+					class='overflow-hidden border-b-2 rounded-md border-picton-blue-950'>
+					<Entry_Params_Color tailwindcolor='#fafafa' tailparam='neutral-50' />
+					<Entry_Params_Color tailwindcolor='#f5f5f5' tailparam='neutral-100' />
+					<Entry_Params_Color tailwindcolor='#e5e5e5' tailparam='neutral-200' />
+					<Entry_Params_Color tailwindcolor='#d4d4d4' tailparam='neutral-300' />
+					<Entry_Params_Color tailwindcolor='#a3a3a3' tailparam='neutral-400' />
+					<Entry_Params_Color tailwindcolor='#737373' tailparam='neutral-500' />
+					<Entry_Params_Color tailwindcolor='#525252' tailparam='neutral-600' />
+					<Entry_Params_Color tailwindcolor='#404040' tailparam='neutral-700' />
+					<Entry_Params_Color tailwindcolor='#262626' tailparam='neutral-800' />
+					<Entry_Params_Color tailwindcolor='#171717' tailparam='neutral-900' />
+					<Entry_Params_Color tailwindcolor='#0a0a0a' tailparam='neutral-950' />
+				</section>
+			</Accordion>
+
+			<Accordion accordion_title='Stone' accordion_description=''>
+				<section
+					class='overflow-hidden border-b-2 rounded-md border-picton-blue-950'>
+					<Entry_Params_Color tailwindcolor='#fafaf9' tailparam='stone-50' />
+					<Entry_Params_Color tailwindcolor='#f5f5f4' tailparam='stone-100' />
+					<Entry_Params_Color tailwindcolor='#e7e5e4' tailparam='stone-200' />
+					<Entry_Params_Color tailwindcolor='#d6d3d1' tailparam='stone-300' />
+					<Entry_Params_Color tailwindcolor='#a8a29e' tailparam='stone-400' />
+					<Entry_Params_Color tailwindcolor='#78716c' tailparam='stone-500' />
+					<Entry_Params_Color tailwindcolor='#57534e' tailparam='stone-600' />
+					<Entry_Params_Color tailwindcolor='#44403c' tailparam='stone-700' />
+					<Entry_Params_Color tailwindcolor='#292524' tailparam='stone-800' />
+					<Entry_Params_Color tailwindcolor='#1c1917' tailparam='stone-900' />
+					<Entry_Params_Color tailwindcolor='#0c0a09' tailparam='stone-950' />
+				</section>
+			</Accordion>
+
+			<Accordion accordion_title='Red' accordion_description=''>
+				<section
+					class='overflow-hidden border-b-2 rounded-md border-picton-blue-950'>
+					<Entry_Params_Color tailwindcolor='#fef2f2' tailparam='red-50' />
+					<Entry_Params_Color tailwindcolor='#fee2e2' tailparam='red-100' />
+					<Entry_Params_Color tailwindcolor='#fecaca' tailparam='red-200' />
+					<Entry_Params_Color tailwindcolor='#fca5a5' tailparam='red-300' />
+					<Entry_Params_Color tailwindcolor='#f87171' tailparam='red-400' />
+					<Entry_Params_Color tailwindcolor='#ef4444' tailparam='red-500' />
+					<Entry_Params_Color tailwindcolor='#dc2626' tailparam='red-600' />
+					<Entry_Params_Color tailwindcolor='#b91c1c' tailparam='red-700' />
+					<Entry_Params_Color tailwindcolor='#991b1b' tailparam='red-800' />
+					<Entry_Params_Color tailwindcolor='#7f1d1d' tailparam='red-900' />
+					<Entry_Params_Color tailwindcolor='#450a0a' tailparam='red-950' />
+				</section>
+			</Accordion>
+
+			<Accordion accordion_title='Orange' accordion_description=''>
+				<section
+					class='overflow-hidden border-b-2 rounded-md border-picton-blue-950'>
+					<Entry_Params_Color tailwindcolor='#fff7ed' tailparam='orange-50' />
+					<Entry_Params_Color tailwindcolor='#ffedd5' tailparam='orange-100' />
+					<Entry_Params_Color tailwindcolor='#fed7aa' tailparam='orange-200' />
+					<Entry_Params_Color tailwindcolor='#fdba74' tailparam='orange-300' />
+					<Entry_Params_Color tailwindcolor='#fb923c' tailparam='orange-400' />
+					<Entry_Params_Color tailwindcolor='#f97316' tailparam='orange-500' />
+					<Entry_Params_Color tailwindcolor='#ea580c' tailparam='orange-600' />
+					<Entry_Params_Color tailwindcolor='#c2410c' tailparam='orange-700' />
+					<Entry_Params_Color tailwindcolor='#9a3412' tailparam='orange-800' />
+					<Entry_Params_Color tailwindcolor='#7c2d12' tailparam='orange-900' />
+					<Entry_Params_Color tailwindcolor='#431407' tailparam='orange-950' />
+				</section>
+			</Accordion>
+
+			<Accordion accordion_title='Amber' accordion_description=''>
+				<section
+					class='overflow-hidden border-b-2 rounded-md border-picton-blue-950'>
+					<Entry_Params_Color tailwindcolor='#fffbeb' tailparam='amber-50' />
+					<Entry_Params_Color tailwindcolor='#fef3c7' tailparam='amber-100' />
+					<Entry_Params_Color tailwindcolor='#fde68a' tailparam='amber-200' />
+					<Entry_Params_Color tailwindcolor='#fcd34d' tailparam='amber-300' />
+					<Entry_Params_Color tailwindcolor='#fbbf24' tailparam='amber-400' />
+					<Entry_Params_Color tailwindcolor='#f59e0b' tailparam='amber-500' />
+					<Entry_Params_Color tailwindcolor='#d97706' tailparam='amber-600' />
+					<Entry_Params_Color tailwindcolor='#b45309' tailparam='amber-700' />
+					<Entry_Params_Color tailwindcolor='#92400e' tailparam='amber-800' />
+					<Entry_Params_Color tailwindcolor='#78350f' tailparam='amber-900' />
+					<Entry_Params_Color tailwindcolor='#451a03' tailparam='amber-950' />
+				</section>
+			</Accordion>
+
+			<Accordion accordion_title='Yellow' accordion_description=''>
+				<section
+					class='overflow-hidden border-b-2 rounded-md border-picton-blue-950'>
+					<Entry_Params_Color tailwindcolor='#fefce8' tailparam='yellow-50' />
+					<Entry_Params_Color tailwindcolor='#fef9c3' tailparam='yellow-100' />
+					<Entry_Params_Color tailwindcolor='#fef08a' tailparam='yellow-200' />
+					<Entry_Params_Color tailwindcolor='#fde047' tailparam='yellow-300' />
+					<Entry_Params_Color tailwindcolor='#facc15' tailparam='yellow-400' />
+					<Entry_Params_Color tailwindcolor='#eab308' tailparam='yellow-500' />
+					<Entry_Params_Color tailwindcolor='#ca8a04' tailparam='yellow-600' />
+					<Entry_Params_Color tailwindcolor='#a16207' tailparam='yellow-700' />
+					<Entry_Params_Color tailwindcolor='#854d0e' tailparam='yellow-800' />
+					<Entry_Params_Color tailwindcolor='#713f12' tailparam='yellow-900' />
+					<Entry_Params_Color tailwindcolor='#422006' tailparam='yellow-950' />
+				</section>
+			</Accordion>
+
+			<Accordion accordion_title='Lime' accordion_description=''>
+				<section
+					class='overflow-hidden border-b-2 rounded-md border-picton-blue-950'>
+					<Entry_Params_Color tailwindcolor='#f7fee7' tailparam='lime-50' />
+					<Entry_Params_Color tailwindcolor='#ecfccb' tailparam='lime-100' />
+					<Entry_Params_Color tailwindcolor='#d9f99d' tailparam='lime-200' />
+					<Entry_Params_Color tailwindcolor='#bef264' tailparam='lime-300' />
+					<Entry_Params_Color tailwindcolor='#a3e635' tailparam='lime-400' />
+					<Entry_Params_Color tailwindcolor='#84cc16' tailparam='lime-500' />
+					<Entry_Params_Color tailwindcolor='#65a30d' tailparam='lime-600' />
+					<Entry_Params_Color tailwindcolor='#4d7c0f' tailparam='lime-700' />
+					<Entry_Params_Color tailwindcolor='#3f6212' tailparam='lime-800' />
+					<Entry_Params_Color tailwindcolor='#365314' tailparam='lime-900' />
+					<Entry_Params_Color tailwindcolor='#1a2e05' tailparam='lime-950' />
+				</section>
+			</Accordion>
+
+			<Accordion accordion_title='Green' accordion_description=''>
+				<section
+					class='overflow-hidden border-b-2 rounded-md border-picton-blue-950'>
+					<Entry_Params_Color tailwindcolor='#f0fdf4' tailparam='green-50' />
+					<Entry_Params_Color tailwindcolor='#dcfce7' tailparam='green-100' />
+					<Entry_Params_Color tailwindcolor='#bbf7d0' tailparam='green-200' />
+					<Entry_Params_Color tailwindcolor='#86efac' tailparam='green-300' />
+					<Entry_Params_Color tailwindcolor='#4ade80' tailparam='green-400' />
+					<Entry_Params_Color tailwindcolor='#22c55e' tailparam='green-500' />
+					<Entry_Params_Color tailwindcolor='#16a34a' tailparam='green-600' />
+					<Entry_Params_Color tailwindcolor='#15803d' tailparam='green-700' />
+					<Entry_Params_Color tailwindcolor='#166534' tailparam='green-800' />
+					<Entry_Params_Color tailwindcolor='#14532d' tailparam='green-900' />
+					<Entry_Params_Color tailwindcolor='#052e16' tailparam='green-950' />
+				</section>
+			</Accordion>
+
+			<Accordion accordion_title='Emerald' accordion_description=''>
+				<section
+					class='overflow-hidden border-b-2 rounded-md border-picton-blue-950'>
+					<Entry_Params_Color tailwindcolor='#ecfdf5' tailparam='emerald-50' />
+					<Entry_Params_Color tailwindcolor='#d1fae5' tailparam='emerald-100' />
+					<Entry_Params_Color tailwindcolor='#a7f3d0' tailparam='emerald-200' />
+					<Entry_Params_Color tailwindcolor='#6ee7b7' tailparam='emerald-300' />
+					<Entry_Params_Color tailwindcolor='#34d399' tailparam='emerald-400' />
+					<Entry_Params_Color tailwindcolor='#10b981' tailparam='emerald-500' />
+					<Entry_Params_Color tailwindcolor='#059669' tailparam='emerald-600' />
+					<Entry_Params_Color tailwindcolor='#047857' tailparam='emerald-700' />
+					<Entry_Params_Color tailwindcolor='#065f46' tailparam='emerald-800' />
+					<Entry_Params_Color tailwindcolor='#064e3b' tailparam='emerald-900' />
+					<Entry_Params_Color tailwindcolor='#022c22' tailparam='emerald-950' />
+				</section>
+			</Accordion>
+
+			<Accordion accordion_title='Teal' accordion_description=''>
+				<section
+					class='overflow-hidden border-b-2 rounded-md border-picton-blue-950'>
+					<Entry_Params_Color tailwindcolor='#f0fdfa' tailparam='teal-50' />
+					<Entry_Params_Color tailwindcolor='#ccfbf1' tailparam='teal-100' />
+					<Entry_Params_Color tailwindcolor='#99f6e4' tailparam='teal-200' />
+					<Entry_Params_Color tailwindcolor='#5eead4' tailparam='teal-300' />
+					<Entry_Params_Color tailwindcolor='#2dd4bf' tailparam='teal-400' />
+					<Entry_Params_Color tailwindcolor='#14b8a6' tailparam='teal-500' />
+					<Entry_Params_Color tailwindcolor='#0d9488' tailparam='teal-600' />
+					<Entry_Params_Color tailwindcolor='#0f766e' tailparam='teal-700' />
+					<Entry_Params_Color tailwindcolor='#115e59' tailparam='teal-800' />
+					<Entry_Params_Color tailwindcolor='#134e4a' tailparam='teal-900' />
+					<Entry_Params_Color tailwindcolor='#042f2e' tailparam='teal-950' />
+				</section>
+			</Accordion>
+
+			<Accordion accordion_title='Cyan' accordion_description=''>
+				<section
+					class='overflow-hidden border-b-2 rounded-md border-picton-blue-950'>
+					<Entry_Params_Color tailwindcolor='#ecfeff' tailparam='cyan-50' />
+					<Entry_Params_Color tailwindcolor='#cffafe' tailparam='cyan-100' />
+					<Entry_Params_Color tailwindcolor='#a5f3fc' tailparam='cyan-200' />
+					<Entry_Params_Color tailwindcolor='#67e8f9' tailparam='cyan-300' />
+					<Entry_Params_Color tailwindcolor='#22d3ee' tailparam='cyan-400' />
+					<Entry_Params_Color tailwindcolor='#06b6d4' tailparam='cyan-500' />
+					<Entry_Params_Color tailwindcolor='#0891b2' tailparam='cyan-600' />
+					<Entry_Params_Color tailwindcolor='#0e7490' tailparam='cyan-700' />
+					<Entry_Params_Color tailwindcolor='#155e75' tailparam='cyan-800' />
+					<Entry_Params_Color tailwindcolor='#164e63' tailparam='cyan-900' />
+					<Entry_Params_Color tailwindcolor='#083344' tailparam='cyan-950' />
+				</section>
+			</Accordion>
+
+			<Accordion accordion_title='Sky' accordion_description=''>
+				<section
+					class='overflow-hidden border-b-2 rounded-md border-picton-blue-950'>
+					<Entry_Params_Color tailwindcolor='#f0f9ff' tailparam='sky-50' />
+					<Entry_Params_Color tailwindcolor='#e0f2fe' tailparam='sky-100' />
+					<Entry_Params_Color tailwindcolor='#bae6fd' tailparam='sky-200' />
+					<Entry_Params_Color tailwindcolor='#7dd3fc' tailparam='sky-300' />
+					<Entry_Params_Color tailwindcolor='#38bdf8' tailparam='sky-400' />
+					<Entry_Params_Color tailwindcolor='#0ea5e9' tailparam='sky-500' />
+					<Entry_Params_Color tailwindcolor='#0284c7' tailparam='sky-600' />
+					<Entry_Params_Color tailwindcolor='#0369a1' tailparam='sky-700' />
+					<Entry_Params_Color tailwindcolor='#075985' tailparam='sky-800' />
+					<Entry_Params_Color tailwindcolor='#0c4a6e' tailparam='sky-900' />
+					<Entry_Params_Color tailwindcolor='#082f49' tailparam='sky-950' />
+				</section>
+			</Accordion>
+
+			<Accordion accordion_title='Blue' accordion_description=''>
+				<section
+					class='overflow-hidden border-b-2 rounded-md border-picton-blue-950'>
+					<Entry_Params_Color tailwindcolor='#eff6ff' tailparam='blue-50' />
+					<Entry_Params_Color tailwindcolor='#dbeafe' tailparam='blue-100' />
+					<Entry_Params_Color tailwindcolor='#bfdbfe' tailparam='blue-200' />
+					<Entry_Params_Color tailwindcolor='#93c5fd' tailparam='blue-300' />
+					<Entry_Params_Color tailwindcolor='#60a5fa' tailparam='blue-400' />
+					<Entry_Params_Color tailwindcolor='#3b82f6' tailparam='blue-500' />
+					<Entry_Params_Color tailwindcolor='#2563eb' tailparam='blue-600' />
+					<Entry_Params_Color tailwindcolor='#1d4ed8' tailparam='blue-700' />
+					<Entry_Params_Color tailwindcolor='#1e40af' tailparam='blue-800' />
+					<Entry_Params_Color tailwindcolor='#1e3a8a' tailparam='blue-900' />
+					<Entry_Params_Color tailwindcolor='#172554' tailparam='blue-950' />
+				</section>
+			</Accordion>
+
+			<Accordion accordion_title='Indigo' accordion_description=''>
+				<section
+					class='overflow-hidden border-b-2 rounded-md border-picton-blue-950'>
+					<Entry_Params_Color tailwindcolor='#eef2ff' tailparam='indigo-50' />
+					<Entry_Params_Color tailwindcolor='#e0e7ff' tailparam='indigo-100' />
+					<Entry_Params_Color tailwindcolor='#c7d2fe' tailparam='indigo-200' />
+					<Entry_Params_Color tailwindcolor='#a5b4fc' tailparam='indigo-300' />
+					<Entry_Params_Color tailwindcolor='#818cf8' tailparam='indigo-400' />
+					<Entry_Params_Color tailwindcolor='#6366f1' tailparam='indigo-500' />
+					<Entry_Params_Color tailwindcolor='#4f46e5' tailparam='indigo-600' />
+					<Entry_Params_Color tailwindcolor='#4338ca' tailparam='indigo-700' />
+					<Entry_Params_Color tailwindcolor='#3730a3' tailparam='indigo-800' />
+					<Entry_Params_Color tailwindcolor='#312e81' tailparam='indigo-900' />
+					<Entry_Params_Color tailwindcolor='#1e1b4b' tailparam='indigo-950' />
+				</section>
+			</Accordion>
+
+			<Accordion accordion_title='Purple' accordion_description=''>
+				<section
+					class='overflow-hidden border-b-2 rounded-md border-picton-blue-950'>
+					<Entry_Params_Color tailwindcolor='#faf5ff' tailparam='purple-50' />
+					<Entry_Params_Color tailwindcolor='#f3e8ff' tailparam='purple-100' />
+					<Entry_Params_Color tailwindcolor='#e9d5ff' tailparam='purple-200' />
+					<Entry_Params_Color tailwindcolor='#d8b4fe' tailparam='purple-300' />
+					<Entry_Params_Color tailwindcolor='#c084fc' tailparam='purple-400' />
+					<Entry_Params_Color tailwindcolor='#a855f7' tailparam='purple-500' />
+					<Entry_Params_Color tailwindcolor='#9333ea' tailparam='purple-600' />
+					<Entry_Params_Color tailwindcolor='#7e22ce' tailparam='purple-700' />
+					<Entry_Params_Color tailwindcolor='#6b21a8' tailparam='purple-800' />
+					<Entry_Params_Color tailwindcolor='#581c87' tailparam='purple-900' />
+					<Entry_Params_Color tailwindcolor='#3b0764' tailparam='purple-950' />
+				</section>
+			</Accordion>
+
+			<Accordion accordion_title='Fuchsia' accordion_description=''>
+				<section
+					class='overflow-hidden border-b-2 rounded-md border-picton-blue-950'>
+					<Entry_Params_Color tailwindcolor='#fdf4ff' tailparam='fuchsia-50' />
+					<Entry_Params_Color tailwindcolor='#fae8ff' tailparam='fuchsia-100' />
+					<Entry_Params_Color tailwindcolor='#f5d0fe' tailparam='fuchsia-200' />
+					<Entry_Params_Color tailwindcolor='#f0abfc' tailparam='fuchsia-300' />
+					<Entry_Params_Color tailwindcolor='#e879f9' tailparam='fuchsia-400' />
+					<Entry_Params_Color tailwindcolor='#d946ef' tailparam='fuchsia-500' />
+					<Entry_Params_Color tailwindcolor='#c026d3' tailparam='fuchsia-600' />
+					<Entry_Params_Color tailwindcolor='#a21caf' tailparam='fuchsia-700' />
+					<Entry_Params_Color tailwindcolor='#86198f' tailparam='fuchsia-800' />
+					<Entry_Params_Color tailwindcolor='#701a75' tailparam='fuchsia-900' />
+					<Entry_Params_Color tailwindcolor='#4a044e' tailparam='fuchsia-950' />
+				</section>
+			</Accordion>
+
+			<Accordion accordion_title='Pink' accordion_description=''>
+				<section
+					class='overflow-hidden border-b-2 rounded-md border-picton-blue-950'>
+					<Entry_Params_Color tailwindcolor='#fdf2f8' tailparam='pink-50' />
+					<Entry_Params_Color tailwindcolor='#fce7f3' tailparam='pink-100' />
+					<Entry_Params_Color tailwindcolor='#fbcfe8' tailparam='pink-200' />
+					<Entry_Params_Color tailwindcolor='#f9a8d4' tailparam='pink-300' />
+					<Entry_Params_Color tailwindcolor='#f472b6' tailparam='pink-400' />
+					<Entry_Params_Color tailwindcolor='#ec4899' tailparam='pink-500' />
+					<Entry_Params_Color tailwindcolor='#db2777' tailparam='pink-600' />
+					<Entry_Params_Color tailwindcolor='#be185d' tailparam='pink-700' />
+					<Entry_Params_Color tailwindcolor='#9d174d' tailparam='pink-800' />
+					<Entry_Params_Color tailwindcolor='#831843' tailparam='pink-900' />
+					<Entry_Params_Color tailwindcolor='#500724' tailparam='pink-950' />
+				</section>
+			</Accordion>
+
+			<Accordion accordion_title='Rose' accordion_description=''>
+				<section
+					class='overflow-hidden border-b-2 rounded-md border-picton-blue-950'>
+					<Entry_Params_Color tailwindcolor='#fff1f2' tailparam='rose-50' />
+					<Entry_Params_Color tailwindcolor='#ffe4e6' tailparam='rose-100' />
+					<Entry_Params_Color tailwindcolor='#fecdd3' tailparam='rose-200' />
+					<Entry_Params_Color tailwindcolor='#fda4af' tailparam='rose-300' />
+					<Entry_Params_Color tailwindcolor='#fb7185' tailparam='rose-400' />
+					<Entry_Params_Color tailwindcolor='#f43f5e' tailparam='rose-500' />
+					<Entry_Params_Color tailwindcolor='#e11d48' tailparam='rose-600' />
+					<Entry_Params_Color tailwindcolor='#be123c' tailparam='rose-700' />
+					<Entry_Params_Color tailwindcolor='#9f1239' tailparam='rose-800' />
+					<Entry_Params_Color tailwindcolor='#881337' tailparam='rose-900' />
+					<Entry_Params_Color tailwindcolor='#4c0519' tailparam='rose-950' />
+				</section>
+			</Accordion>
+		</div>
+	</section>
+</Base>

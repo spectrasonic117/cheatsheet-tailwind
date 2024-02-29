@@ -2,6 +2,7 @@
 import Base from '@layouts/layoutbase.astro';
 import Accordion from '@components/Accordion.astro';
 import Entry_Params from '@components/Entry_Accordion.astro';
+import Entry_Params_Color from '@components/Entry_Accordion_Color.astro';
 
 const title = 'Template';
 const description = 'Tailwind Cheatsheet for Offline use.';
@@ -9,14 +10,30 @@ const description = 'Tailwind Cheatsheet for Offline use.';
 
 <Base title={title} description={description}>
 	<section class='w-full text-picton-blue-50'>
-		<h1 class='mb-16 text-5xl font-bold'>Sizing</h1>
+		<h1 class='mb-16 text-5xl font-bold'>{title}</h1>
 		<div class='flex flex-col items-center justify-center'>
-			<Accordion
-				accordion_title='TITTLE'
-				accordion_description='DESCRIPTION'>
+			<!-- Normal Accordion  -->
+			<Accordion accordion_title='TITTLE' accordion_description='DESCRIPTION'>
 				<section
 					class='overflow-hidden border-b-2 rounded-md border-picton-blue-950'>
 					<Entry_Params tailparam='TAILPARAM' cssparam='CSSPARAM' />
+				</section>
+			</Accordion>
+			<!-- Color Accordion -->
+			<Accordion accordion_title='TITTLE' accordion_description=''>
+				<section
+					class='overflow-hidden border-b-2 rounded-md border-picton-blue-950'>
+					<Entry_Params_Color tailwindcolor='COLOR' tailparam='TCOLOR-50' />
+					<Entry_Params_Color tailwindcolor='COLOR' tailparam='TCOLOR-100' />
+					<Entry_Params_Color tailwindcolor='COLOR' tailparam='TCOLOR-200' />
+					<Entry_Params_Color tailwindcolor='COLOR' tailparam='TCOLOR-300' />
+					<Entry_Params_Color tailwindcolor='COLOR' tailparam='TCOLOR-400' />
+					<Entry_Params_Color tailwindcolor='COLOR' tailparam='TCOLOR-500' />
+					<Entry_Params_Color tailwindcolor='COLOR' tailparam='TCOLOR-600' />
+					<Entry_Params_Color tailwindcolor='COLOR' tailparam='TCOLOR-700' />
+					<Entry_Params_Color tailwindcolor='COLOR' tailparam='TCOLOR-800' />
+					<Entry_Params_Color tailwindcolor='COLOR' tailparam='TCOLOR-900' />
+					<Entry_Params_Color tailwindcolor='COLOR' tailparam='TCOLOR-950' />
 				</section>
 			</Accordion>
 		</div>

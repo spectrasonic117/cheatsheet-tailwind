@@ -1,0 +1,80 @@
+---
+import Base from '@layouts/layoutbase.astro';
+import Accordion from '@components/Accordion.astro';
+import Entry_Params from '@components/Entry_Accordion.astro';
+
+const title = 'Borders';
+const description = 'Tailwind Cheatsheet for Offline use.';
+---
+
+<Base title={title} description={description}>
+	<section class='w-full text-picton-blue-50'>
+		<h1 class='mb-16 text-5xl font-bold'>{title}</h1>
+		<div class='flex flex-col items-center justify-center'>
+			<Accordion
+				accordion_title='Border Radius'
+				accordion_description='Sets border radius.'>
+				<section
+					class='overflow-hidden border-b-2 rounded-md border-picton-blue-950'>
+					<Entry_Params tailparam='rounded-none' cssparam='border-radius: 0;' />
+					<Entry_Params
+						tailparam='rounded-sm'
+						cssparam='border-radius: 0.125rem; 2px'
+					/>
+					<Entry_Params
+						tailparam='rounded'
+						cssparam='border-radius: 0.25rem; 4px'
+					/>
+					<Entry_Params
+						tailparam='rounded-md'
+						cssparam='border-radius: 0.375rem; 6px'
+					/>
+					<Entry_Params
+						tailparam='rounded-lg'
+						cssparam='border-radius: 0.5rem; 8px'
+					/>
+					<Entry_Params
+						tailparam='rounded-xl'
+						cssparam='border-radius: 0.75rem; 10px'
+					/>
+					<Entry_Params
+						tailparam='rounded-2xl'
+						cssparam='border-radius: 1rem; 12px'
+					/>
+					<Entry_Params
+						tailparam='rounded-xl'
+						cssparam='border-radius: 1.5rem; 16px'
+					/>
+					<Entry_Params
+						tailparam='rounded-full'
+						cssparam='border-radius: 0.125rem; 2px'
+					/>
+					<Entry_Params
+						tailparam='rounded-'
+						cssparam='border-radius: 9999px;'
+					/>
+				</section>
+			</Accordion>
+
+			<Accordion
+				accordion_title='Border Width'
+				accordion_description='Sets width for borders in increments of 1px.'>
+				<section
+					class='overflow-hidden border-b-2 rounded-md border-picton-blue-950'>
+					<Entry_Params tailparam='border' cssparam='border-width: 1px;' />
+					<Entry_Params tailparam='border-0' cssparam='border-width: 0;' />
+					<Entry_Params tailparam='border-2' cssparam='border-width: 2px;' />
+					<Entry_Params tailparam='border-4' cssparam='border-width: 4px;' />
+					<Entry_Params tailparam='border-8' cssparam='border-width: 8px;' />
+				</section>
+			</Accordion>
+
+			<Accordion accordion_title='TITTLE' accordion_description='DESCRIPTION'>
+				<section
+					class='overflow-hidden border-b-2 rounded-md border-picton-blue-950'>
+					<Entry_Params tailparam='TAILPARAM' cssparam='CSSPARAM' />
+				</section>
+			</Accordion>
+		</div>
+	</section>
+</Base>
